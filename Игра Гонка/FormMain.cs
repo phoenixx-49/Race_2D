@@ -16,8 +16,8 @@ namespace Игра_Гонка
         #region <Переменные>
 
         private Point Pos;//координаты первоначальной позиции мышки
-        private bool Dragging;//информация о том: передвигаем мы сейчас окно или нетч
-        int CountCoins = 0;//колчество монет при старте игры
+        private bool Dragging;//информация о том: передвигаем мы сейчас окно или нет
+        int CountCoins = 0;//количество мнет при старте игры
 
         SoundPlayer SoundCoin = new SoundPlayer(Properties.Resources.zakinuli_monetku_v_kopilku);
         SoundPlayer SoundAvaria = new SoundPlayer(Properties.Resources.material_zvukovoy_effekt_stolknoveniya_razdavit_39619);
