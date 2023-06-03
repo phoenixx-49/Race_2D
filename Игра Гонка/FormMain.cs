@@ -77,13 +77,11 @@ namespace Игра_Гонка
                 this.Close();
             }
         }
-
         /// <summary>
         /// движение трассы
         /// </summary>
         private void TimerAnim_Tick(object sender, EventArgs e)
         {
-
             int speed = 5;//скорость
             Random Rnd = new Random();
 
@@ -131,7 +129,6 @@ namespace Игра_Гонка
                 LblDefeat.Show();
                 BtnRestart.Show();
             }
-
             //подсчёт монет
             if(PbxCar.Bounds.IntersectsWith(PbxCoin.Bounds))
             {
@@ -183,11 +180,6 @@ namespace Игра_Гонка
             BtnRestart.Hide();
 
             TimerAnim.Enabled = true;
-        }
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
